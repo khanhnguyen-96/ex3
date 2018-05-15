@@ -13,7 +13,7 @@
         android:layout_margin="@dimen/default_margin"
         android:contentDescription="@string/bklogo"
         android:layout_gravity="center_horizontal"
-        app:srcCompat="@drawable/Logo" />
+        app:srcCompat="@drawable/logo" />
 
     <LinearLayout
         android:layout_width="match_parent"
