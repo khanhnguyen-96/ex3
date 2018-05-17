@@ -5,8 +5,8 @@ package banana.mybk;
  */
 
 public class Const {
-    public static String USER_ID = "1411768";
-    public static String PASSWORD = "dddd";
+    public static String USER_ID = "";
+    public static String PASSWORD = "";
 
     public static class Key {
         public static String REMEMBER_PASSWORD="REMEMBER_PASSWORD";
