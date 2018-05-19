@@ -29,7 +29,7 @@
         <activity
             android:name=".Activities.ScheduleActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Activities.ExamActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">

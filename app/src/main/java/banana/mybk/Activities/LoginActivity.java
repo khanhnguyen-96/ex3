@@ -109,7 +109,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
             Intent intent = new Intent(this, MainActivity.class);
             intent.putExtra(Const.Key.SAVED_USER, id);
-            getApplicationContext().startActivity(intent);
+            LoginActivity.this.startActivity(intent);
             this.finish();
         } else {
             Toast.makeText(getApplicationContext(), "User ID or password is incorrect", Toast.LENGTH_SHORT).show();

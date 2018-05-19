@@ -34,12 +34,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.schedule:
                 Intent intent = new Intent(this, ScheduleActivity.class);
-                getApplicationContext().startActivity(intent);
+                MainActivity.this.startActivity(intent);
                 this.finish();
                 break;
             case R.id.exam:
                 Intent intent1 = new Intent(this, ExamActivity.class);
-                getApplicationContext().startActivity(intent1);
+                MainActivity.this.startActivity(intent1);
                 this.finish();
                 break;
         }

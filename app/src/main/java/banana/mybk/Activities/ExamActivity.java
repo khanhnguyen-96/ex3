@@ -57,7 +57,7 @@ public class ExamActivity extends AppCompatActivity {
 
     public void clickBackBtn(){
         Intent intent = new Intent(this, MainActivity.class);
-        getApplicationContext().startActivity(intent);
+        ExamActivity.this.startActivity(intent);
         this.finish();
     }
 
