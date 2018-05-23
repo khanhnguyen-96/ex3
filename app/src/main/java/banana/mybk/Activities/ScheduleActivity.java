@@ -151,4 +151,6 @@ public class ScheduleActivity extends AppCompatActivity {
         txtRoom3 = findViewById(R.id.room4);
         txtWeek3 = findViewById(R.id.week4);
     }
+
+
 }
