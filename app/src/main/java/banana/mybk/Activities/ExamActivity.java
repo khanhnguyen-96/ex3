@@ -39,20 +39,10 @@ public class ExamActivity extends AppCompatActivity {
         });
         datasource = new ScheduleDataSource(this);
         List<Subject> values = datasource.getAllSubject();
-        if(values.size() == 0) {
-            datasource.createSubject("'CO3002'", "'CONG NGHE PHAN MEM'", 1, 2, 3, "'L02'",
-                    5, "'7-9'", "'201H1'", "'10|11'", "12/06", "'12g30'", "'109H6'");
-            datasource.createSubject("'CO3033'", "'BAO MAT HE THONG THONG TIN'", 2, 1, 3, "'L01'"
-                    , 4, "'1-3'", "'201H2'", "'10|11'", "13/06", "'12g30'", "'109H6'");
-            datasource.createSubject("'CO3034'", "'MAT MA AN NINH MANG'", 1, 2, 3, "'L03'"
-                    , 2, "'4-6'", "'301H1'", "'10|11'", "14/06", "'12g30'", "'301H1'");
-            datasource.createSubject("'CO3002'", "'CAU TRUC ROI RAC'", 1, 2, 3, "'L01'"
-                    , 3, "'10-12'", "'203H2'", "'10|11'", "15/06", "'12g30'", "'203H2'");
-        }
-        values = datasource.getAllSubject();
-
         setUp();
-        bindDataToTable(values);
+        if(values.size() != 0){
+            bindDataToTable(values);
+        }
     }
 
     public void clickBackBtn(){

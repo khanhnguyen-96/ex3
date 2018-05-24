@@ -28,12 +28,12 @@ public class Receiver extends BroadcastReceiver {
                 context).setSmallIcon(R.drawable.logo)
                 .setContentTitle("SCHEDULE NOTIFY")
                 .setContentText("You've got class today!!!")
-                .setAutoCancel(true).setWhen(when)
+                //.setAutoCancel(true).setWhen(when)
                 .setContentIntent(pendingIntent)
                 .setDefaults(Notification.DEFAULT_SOUND);
-        for(int i=2; i<7; i++){
-            notificationManager.notify(i, mNotifyBuilder.build());
-        }
+        //for(int i=2; i<7; i++){
+            notificationManager.notify(0, mNotifyBuilder.build());
+        //}
     }
 
 }
